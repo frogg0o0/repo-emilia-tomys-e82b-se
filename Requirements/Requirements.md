@@ -171,6 +171,12 @@
       <td>Soll</td>
     </tr>
     <tr>
+      <td>4.9</td>
+      <td>Leiser "Night"-Modus</td>
+      <td>Der Lautstärke des Ventilators im "Night"-Modus ist höchstens 30dB.</td>
+      <td>Soll</td>
+    </tr>
+    <tr>
       <td>5.6</td>
       <td>Reaktionszeit des Überhitzungsschutzes</td>
       <td>Der Überhitzungsschutz greift innerhalb von einer Sekunde nach Überschreitung der Temperaturschwelle.</td>
