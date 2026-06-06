@@ -97,7 +97,7 @@
     </tr>
     <tr>
       <td>5.3</td>
-      <td>Überwachung der maximalen Drehzahl</td>
+      <td>Überwachung der Drehzahl</td>
       <td>Es wird regelmäßig geprüft, ob die aktuelle Drehzahl die maximale Drehzahl überschreitet.</td>
       <td>Muss</td>
     </tr>
@@ -214,7 +214,7 @@
     </tr>
     <tr>
       <td>4.1 → 4.2, 4.3, 4.4</td>
-      <td>Die einzelnen Modusbeschreibungen (4.2–4.4) setzen voraus, dass die Modusauswahl grundsätzlich unterstützt wird (4.1).</td>
+      <td>Die einzelnen Modi (4.2–4.4) setzen voraus, dass die Modusauswahl grundsätzlich unterstützt wird (4.1).</td>
     </tr>
     <tr>
       <td>4.7 → 3.1</td>
@@ -233,10 +233,28 @@
   </thead>
   <tbody>
     <tr>
-      <td>? ↔ ?</td>
-      <td></td>
+      <td>5.2, 5.6 ↔ 5.4, 5.7</td>
+      <td>Überhitzungsschutz und Überdrehungsschutz können gleichzeitig auftauchen und dürfen sich nicht gegenseitig einschränken.</td>
     </tr>
   </tbody>
 </table>
 
 ### 5. Zusammengehörigkeiten zwischen Requirements
+<table>
+  <thead>
+    <tr>
+      <th>Requirement-Nr.</th>
+      <th>Zusammenhangengehörigkeiten</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.1, 1.2, 5.1, 5.3</td>
+      <td>Erfassen wichtiger Daten.</td>
+    </tr>
+    <tr>
+      <td>2.1, </td>
+      <td>Anzeige oder so.</td>
+    </tr>
+  </tbody>
+</table>
