@@ -2,16 +2,16 @@
 
 ### 1. Erfassung von Drehzahl und Raumtemperatur
 
-Kontinuierliche Messung der aktuellen Ventilatordrehzahl über einen Drehzahlsensor.
-Kontinuierliche Messung der Raumtemperatur über einen Temperatursensor.
-Beide Messgrößen werden automatisch und ohne zusätzliche Aktion des Nutzers erfasst.
+Kontinuierliche Messung der aktuellen Ventilatordrehzahl über einen Drehzahlsensor. <br>
+Kontinuierliche Messung der Raumtemperatur über einen Temperatursensor. <br>
+Beide Messgrößen werden automatisch und ohne zusätzliche Aktion des Nutzers erfasst. <br> 
 Die Erfassung läuft unabhängig vom Nutzer und wird durch dessen Interaktionen nicht beeinflusst.
 
 ### 2. Anzeige der aktuellen Drehzahl
 
-Gut sichtbare, intuitiv verständliche Anzeige der aktuellen Drehzahl bei eingeschaltetem Ventilator als Stufenbalken.
-Einfache, nicht überladene Darstellung.
-Automatische Aktualisierung der Anzeige ohne erforderliche Benutzerinteraktion.
+Gut sichtbare, intuitiv verständliche Anzeige der aktuellen Drehzahl bei eingeschaltetem Ventilator als Stufenbalken. <br>
+Einfache, nicht überladene Darstellung. <br>
+Automatische Aktualisierung der Anzeige ohne erforderliche Benutzerinteraktion. <br> 
 Barrierefreie Gestaltung für Nutzer mit eingeschränktem Sehvermögen (z.B. kontrastreiche Darstellung).
 
 ### 3. Einstellung der gewünschten Drehzahl
