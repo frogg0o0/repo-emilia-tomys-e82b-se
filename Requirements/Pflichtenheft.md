@@ -1,3 +1,5 @@
+# Pflichtenheft
+
 ### 1. Erfassung von Drehzahl und Raumtemperatur
 
 Kontinuierliche Messung der aktuellen Ventilatordrehzahl über einen Drehzahlsensor.
