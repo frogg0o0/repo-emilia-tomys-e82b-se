@@ -1,3 +1,9 @@
+1. Erfassung der aktuellen Drehzahl und Raumtemperatur
+2. Anzeige der aktuellen Drehzahl
+3. Einstellen der gewünschten Drehzahl
+4. Einstellen verschiedener Betriebsmodi
+5. Schutz des Motors
+
 ### 1. Funktionale Requirements
 
 <table>
