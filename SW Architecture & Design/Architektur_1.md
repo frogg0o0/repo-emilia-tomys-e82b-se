@@ -17,6 +17,29 @@ neu erstellt
 
 ![Komponentendiagramm](../ressources/Architektur_1.png)
 
+<table>
+  <tr>
+    <th>Komponenete</th>
+    <th>Requirements</th>
+  </tr>
+  <tr>
+    <td>UserInterface</td>
+    <td>2.1, 2.2, 2.3, 2.4, 3.1, 4.5</td>
+  </tr>
+  <tr>
+    <td>FanLogic</td>
+    <td>1.3, 3.1, 4.1</td>
+  </tr>
+  <tr>
+    <td>HardwareAbstraction</td>
+    <td>1.1, 1.3, 1.4</td>
+  </tr>
+  <tr>
+    <td>PersistenceManager</td>
+    <td>3.2</td>
+  </tr>
+</table>
+
 **Verantwortlichkeiten der Komponenten:**
 
 
