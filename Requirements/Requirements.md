@@ -37,7 +37,7 @@
     <tr>
       <td>3.1</td>
       <td>Stufenweise Drehzahleinstellung</td>
-      <td>Der Benutzer kann die gewünschte Zieldrehzahl in fünf Stufen einstellen: 10 %, 25 %, 50 %, 75 %, 100 %.</td>
+      <td>Der Benutzer kann die gewünschte Zieldrehzahl in fünf Stufen einstellen.</td>
       <td>Muss</td>
     </tr>
     <tr>
