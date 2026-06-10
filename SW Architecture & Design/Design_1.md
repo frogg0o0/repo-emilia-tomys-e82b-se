@@ -10,6 +10,9 @@
 
 ## Designpatterns
 
+Singleton, Abstrakte Fabrik, Adapter, Bridge, Proxy, Dekorierer, Kompositum
+Schablonenmethode, Befehl, Observer, Strategie, Zuständigkeitskette
+
 <table>
   <tr>
     <th>Klasse</th>
