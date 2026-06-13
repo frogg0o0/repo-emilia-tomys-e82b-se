@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>Requirement-ID</th>
+    <th>Komponente</th>
+    <th>Klasse(n)</th>
+    <th>Schnittstelle(n)</th>
+    <th>Testfall(e)</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>

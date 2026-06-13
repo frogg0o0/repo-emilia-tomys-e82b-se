@@ -4,10 +4,8 @@ package fanLogic;
  *  Enum of the different operating modes supported by the fan.
  */
 public enum OperatingMode {
-
-    MANUAL("Manual"),
-    AUTO("Auto"),
-    NIGHT("Night");
+    /** Manual mode where the user explicitly controls the speed levels.*/
+    MANUAL("Manual");
 
     private final String displayName;
 
@@ -16,9 +14,8 @@ public enum OperatingMode {
     }
 
     /**
-     * Name that shows up in the user interface.
-     *
-     * @return name of the operating mode
+     * Returns the displayable name of the operating state.
+     * @return The user-friendly name of the mode.
      */
     public String getDisplayName() {
         return displayName;

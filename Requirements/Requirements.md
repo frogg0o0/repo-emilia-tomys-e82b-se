@@ -1,10 +1,11 @@
+# Teilfunktionalitäten
 1. Erfassung der aktuellen Drehzahl und Raumtemperatur
 2. Anzeige der aktuellen Drehzahl
 3. Einstellen der gewünschten Drehzahl
 4. Einstellen verschiedener Betriebsmodi
 5. Schutz des Motors
 
-### 1. Funktionale Requirements
+## 1. Funktionale Requirements
 
 <table>
   <thead>
@@ -42,6 +43,12 @@
     </tr>
     <tr>
       <td>3.2</td>
+      <td>Ein-/Ausschalten des Ventilators</td>
+      <td>Der Benutzer kann den Ventilator ein- oder ausschalten.</td>
+      <td>Muss</td>
+    </tr>
+    <tr>
+      <td>3.3</td>
       <td>Speicherung der letzten Drehzahleinstellung</td>
       <td>Die zuletzt eingestellte Drehzahl wird dauerhaft gespeichert und beim nächsten Einschalten des Ventilators automatisch wiederhergestellt.</td>
       <td>Kann</td>
@@ -50,37 +57,37 @@
       <td>4.1</td>
       <td>Auswahl verschiedener Betriebsmodi</td>
       <td>Der Ventilator unterstützt drei Betriebsmodi: "Manual", "Auto" und "Night".</td>
-      <td>Muss</td>
+      <td>Soll</td>
     </tr>
     <tr>
       <td>4.2</td>
       <td>Betriebsmodus Manual</td>
       <td>Im Modus "Manual" wird die Drehzahl ausschließlich durch den Nutzer gesteuert.</td>
-      <td>Kann</td>
+      <td>Muss</td>
     </tr>
     <tr>
       <td>4.3</td>
       <td>Betriebsmodus Auto</td>
       <td>Im Modus "Auto" wird die Drehzahl automatisch proportional zur erfassten Raumtemperatur angepasst.</td>
-      <td>Kann</td>
+      <td>Soll</td>
     </tr>
     <tr>
       <td>4.4</td>
       <td>Betriebsmodus Night</td>
-      <td>Im Modus "Night" wird die Drehzahl automatisch proportional zur erfassten Raumtemperatur angepasst mit Begrenzung der maximalen Drehzahl auf 30%.</td>
+      <td>Im Modus "Night" wird die Drehzahl automatisch proportional zur erfassten Raumtemperatur angepasst mit Begrenzung der maximalen Drehzahl.</td>
       <td>Kann</td>
     </tr>
     <tr>
       <td>4.5</td>
       <td>Anzeige des aktuellen Betriebsmodus</td>
       <td>Der Name des aktuellen Betriebsmodus wird bei eingeschaltenen Ventialtor dauerhaft angezeigt.</td>
-      <td>Kann</td>
+      <td>Muss</td>
     </tr>
     <tr>
       <td>4.6</td>
       <td>Wechseln des aktuellen Betriebsmodus</td>
       <td>Der aktuelle Betriebsmodus wird durch einmaliges Drücken der Einschalttaste gewechselt.</td>
-      <td>Kann</td>
+      <td>Soll</td>
     </tr>
     <tr>
       <td>4.7</td>
@@ -123,7 +130,7 @@
   </tbody>
 </table>
 
-### 2. Nicht-Funktionale Requirements
+## 2. Nicht-Funktionale Requirements
 <table>
   <thead>
     <tr>
@@ -150,7 +157,7 @@
       <td>2.2</td>
       <td>Intuitive Anzeige der Drehzahl</td>
       <td>Die aktuelle Drehzahl wird in einer einfachen und verständlichen Form dargestellt.</td>
-      <td>Muss</td>
+      <td>Soll</td>
     </tr>
     <tr>
       <td>2.3</td>
@@ -162,7 +169,7 @@
       <td>2.4</td>
       <td>Barrierefreie Anzeige der Drehzahl (Sehschwäche)</td>
       <td>Die Anzeige ist auch für Nutzer mit eingeschränktem Sehvermögen gut erkennbar.</td>
-      <td>Muss</td>
+      <td>Kann</td>
     </tr>
     <tr>
       <td>4.8</td>
@@ -173,25 +180,25 @@
     <tr>
       <td>4.9</td>
       <td>Leiser "Night"-Modus</td>
-      <td>Der Lautstärke des Ventilators im "Night"-Modus ist höchstens 30dB.</td>
+      <td>Die Lautstärke des Ventilators im "Night"-Modus ist höchstens 30dB.</td>
       <td>Soll</td>
     </tr>
     <tr>
       <td>5.6</td>
       <td>Reaktionszeit des Überhitzungsschutzes</td>
       <td>Der Überhitzungsschutz greift innerhalb von einer Sekunde nach Überschreitung der Temperaturschwelle.</td>
-      <td>Soll</td>
+      <td>Muss</td>
     </tr>
     <tr>
       <td>5.7</td>
       <td>Reaktionszeit des Überdrehzahlschutz</td>
       <td>Der Überdrehzahlschutz greift innerhalb von 3 Sekunden nach Überschreitung der maximalen Drehzahl.</td>
-      <td>Soll</td>
+      <td>Muss</td>
     </tr>
   </tbody>
 </table>
 
-### 3. Abhängigkeiten zwischen Requirements
+## 3. Abhängigkeiten zwischen Requirements
 <table>
   <thead>
     <tr>
@@ -210,32 +217,40 @@
     </tr>
     <tr>
       <td>1.2 → 4.3, 4.4</td>
-      <td>Der "Auto"- und "Night"-Modus (4.3,4.4) benötigen die Temperaturerfassung (1.2) als interne Regelgröße.</td>
+      <td>Der "Auto"- und "Night"-Modus (4.3,4.4) benötigen die Raumtemperaturerfassung (1.2) als interne Regelgröße.</td>
+    </tr>
+      <tr>
+      <td>1.1, 1.2 → 1.3, 1.4</td>
+      <td>Die automatische (1.3) und unbeeinflusste Erfassung (1.4) der Messwerte setzt die Messfunktionen für Drehzahl (1.1) und Temperatur (1.2) voraus.</td>
     </tr>
     <tr>
-      <td>5.1 → 5.2</td>
-      <td>Der Überhitzungsschutz (5.2) setzt voraus, dass die Motortemperatur überwacht wird (5.1).</td>
+      <td>2.1 → 2.2, 2.3, 2.4</td>
+      <td>Die Intuitivität (2.2), Aktualisierung (2.3) und die Barrierefreiheit (2.4) der Drehzahlanzeige setzen die Anzeige der Drehzahl (2.1) voraus.</td>
     </tr>
     <tr>
-      <td>5.3 → 5.2, 5.5</td>
-      <td>Die Benutzerwarnung (5.3) setzt voraus, dass ein Schutzeingriff stattfindet (5.2, 5.5).</td>
-    </tr>
-    <tr>
-      <td>5.4 → 5.5</td>
-      <td>Der Überdrehzahlschutz (5.5) setzt voraus, dass die maximale Drehzahl überwacht wird (5.4).</td>
-    </tr>
-    <tr>
-      <td>4.1 → 4.2, 4.3, 4.4</td>
-      <td>Die einzelnen Modi (4.2–4.4) setzen voraus, dass die Modusauswahl grundsätzlich unterstützt wird (4.1).</td>
-    </tr>
-    <tr>
-      <td>4.7 → 3.1</td>
+      <td>3.1 → 4.7</td>
       <td>Das Wechseln in den Manual-Modus bei Nutzereingriff (4.7) setzt voraus, dass eine manuelle Drehzahleinstellung möglich ist (3.1).</td>
+    </tr>
+      <tr>
+      <td>4.1 → 4.2, 4.3, 4.4, 4.5, 2.6</td>
+      <td>Die einzelnen Modi (4.2–4.4), deren Anzeige (4.5) und das Wechseln dieser (4.6) setzen voraus, dass die Modusauswahl grundsätzlich unterstützt wird (4.1).</td>
+    </tr>
+    <tr>
+      <td>5.1 → 5.2, 5.6</td>
+      <td>Der Überhitzungsschutz (5.2) und dessen Reaktionszeit (5.6) setzen voraus, dass die Motortemperatur überwacht wird (5.1).</td>
+    </tr>
+    <tr>
+      <td>5.3 → 5.4, 5.7</td>
+      <td>Der Überdrehzahlschutz (5.4) und dessen Reaktionszeit (5.7) setzen voraus, dass die maximale Drehzahl überwacht wird (5.4).</td>
+    </tr>
+    <tr>
+      <td>5.2, 5.4 → 5.5</td>
+      <td>Die Benutzerwarnung (5.5) setzt voraus, dass ein Schutzeingriff stattfindet (5.2, 5.4).</td>
     </tr>
   </tbody>
 </table>
 
-### 4. Konflikte zwischen Requirements
+## 4. Konflikte zwischen Requirements
 <table>
   <thead>
     <tr>
@@ -244,14 +259,20 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>5.2, 5.6 ↔ 5.4, 5.7</td>
-      <td>Überhitzungsschutz und Überdrehungsschutz können gleichzeitig auftauchen und dürfen sich nicht gegenseitig einschränken.</td>
-    </tr>
-  </tbody>
+      <tr>
+      <td>4.3, 4.4 ↔ 4.7</td>
+      <td>Der "Auto"-Modus (4.3) und "Night"-Modus (4.4) müssen von manuellen Eingriffe klar getrennt sein. Nutzerinteraktion in einem dieser Modi führt zwingend zum Wechsel in Manual (4.7).</td>
+      </tr>
+      <tr>
+      <td>4.4 ↔ 4.9</td>
+      <td>Der "Night"-Modus (4.4) und niedrige Geräuschentwicklung (4.9) können sich gegenseitig beeinflussen.</td>
+      <tr>
+      <td>5.2, 5.4 ↔ 5.6, 5.7</td>
+      <td>Überhitzungsschutz (5.2) und Überdrehzahlschutz (5.4) können gleichzeitig auftauchen und dürfen sich nicht im Bezug auf Reaktionszeit (5.6, 5.7) beeinflussen.</td>
+    </tr>  </tbody>
 </table>
 
-### 5. Zusammengehörigkeiten zwischen Requirements
+## 5. Zusammengehörigkeiten zwischen Requirements
 <table>
   <thead>
     <tr>
@@ -261,12 +282,24 @@
   </thead>
   <tbody>
     <tr>
-      <td>1.1, 1.2, 5.1, 5.3</td>
-      <td>Erfassen wichtiger Daten.</td>
+      <td>1.*</td>
+      <td>Messung und Erfassung.</td>
     </tr>
     <tr>
-      <td>2.1, </td>
-      <td>Anzeige oder so.</td>
+      <td>2.*, 4.5, 4.8</td>
+      <td>Anzeige und Nutzbarkeit.</td>
+    </tr>
+    <tr>
+      <td>4.1, 4.2, 4.3, 4.4, 4.9</td>
+      <td>Betriebsmodi und Komfort.</td>
+    </tr>
+    <tr>
+      <td>5.*</td>
+      <td>Schutz und Sicherheit.</td>
+    </tr>
+    <tr>
+      <td>3.3</td>
+      <td>Persistenz und Wiederherstellung.</td>
     </tr>
   </tbody>
 </table>

@@ -25,7 +25,7 @@ public enum SpeedLevel {
 
     /**
      * Gets the current speed level.
-     * @return The speed level (1-5).
+     * @return The speed level numerical value (1-5).
      */
     public int getLevel() {
         return level;
@@ -33,7 +33,7 @@ public enum SpeedLevel {
 
     /**
      * Gets the fraction of the maximum speed.
-     * @return The factor.
+     * @return The factor as a double percentage (0.0 to 1.0).
      */
     public double getFactor() {
         return factor;
