@@ -80,7 +80,7 @@
     <td><code>turnOff()</code>, <code>turnOn()</code>, <code>setMotorSpeed(int targetRpm)</code>, <code>isPowerOn()</code>, <code>getMaxRpm()</code></td>
   </tr>
   <tr>
-    <td><code>ersistenceManager</code></td>
+    <td><code>persistenceManager</code></td>
     <td><code>fanLogic</code></td>
     <td><code>loadLastSpeed()</code>, <code>saveLastSpeed()</code></td>
   </tr>
