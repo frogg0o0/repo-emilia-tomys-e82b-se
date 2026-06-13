@@ -13,6 +13,9 @@ In der folgenden Abbildung ist sind nun alle Klassen der Komponente UserInterfac
 ![Komponentendiagramm](../ressources/UserInterfaceKlassendiagramm_1.png)
 
 ## Zustandsdiagramm: Manuelle Steuerung des Ventilators
+H: Historie State -> gespeichertes speed level wiederherstellen
+
+<br>
 
 ![Komponentendiagramm](../ressources/ManuelleSteuerung.png)
 
