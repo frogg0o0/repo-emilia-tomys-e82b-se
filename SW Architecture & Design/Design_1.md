@@ -3,7 +3,7 @@
 ## Klassendiagramm
 
 In der folgenden Abbildung ist das Klassendiagramm für das gewählte Systemdesign abgebildet. Es enthält die relevanten Methoden und Attribute der zentralen Klassen (mit allen Zugriffsmodifikatoren). <br>
-Zur Übersichtlichkeit wurden in der Komponente userInterface die spezifischen Hilfsklassen `FanControlPanel`, `OperatingModePanel`, `PowerButton` und `PowerButtonUIHandler` auf die Hauptklasse GUI abstrahiert. Diese Klassen stehen im tatsächlichen System in einer Kompositionsbeziehung zur GUI und besitzen jeweils eine gerichtete Assoziation zum FanController. <br>
+Zur Übersichtlichkeit wurden in der Komponente userInterface die spezifischen Hilfsklassen `FanControlPanel`, `OperatingModePanel`, `PowerButton` und `PowerButtonUIHandler` auf die Hauptklasse GUI abstrahiert. Diese Klassen, bis auf `PowerButton`, besitzen jeweils eine gerichtete Assoziation zum FanController. <br>
 Bei diesem Entwurf wurde besonderer Wert auf das Einhalten einer sauberen Schichtenarchitektur und die Vermeidung zyklischer Abhängigkeiten zwischen den Komponenten gelegt.
 
 ![Komponentendiagramm](../ressources/Klassendiagramm_1.png)
